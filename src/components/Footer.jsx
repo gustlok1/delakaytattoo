@@ -14,7 +14,7 @@ export default function Footer() {
         {/* Botão WhatsApp */}
         
         <a
-          href={`https://wa.me/55XXXXXXXXXXX?text=${mensagem}`}
+          href={`https://wa.me/5511974585154?text=${mensagem}`}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"

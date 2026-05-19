@@ -9,17 +9,18 @@ const depoimentos = [
     iniciais: "CM",
     texto: "Excelente trabalho, ambiente muito tranquilo e acolhedor, rápida e conversa bastante assim acaba sendo até que rápido a sessão. Recomendo muito e vou fazer mais pelo decorrer do tempo.",
   },
-  {
-    nome: "Pall",
-    iniciais: "PA",
-    texto: "Sem dúvidas, uma profissional de outro nível. O atendimento é super atencioso e o ambiente tem uma energia incrível. Sobre os traços? A precisão é absurda e o resultado ficou perfeito. Uma artista completa que entrega ótimas técnicas e cuidado em cada detalhe.",
-  },
-  {
-    nome: "Victor José",
-    iniciais: "VJ",
-    texto: "Trabalho sensacional, local com fácil acesso, organização excelente, profissional super atenciosa e receptiva, higiene impecável, só pontos de qualidades a serem citados, voltarei mais vezes, gostei muito.",
-  },
+  // {
+  //   nome: "Pall",
+  //   iniciais: "PA",
+  //   texto: "Sem dúvidas, uma profissional de outro nível. O atendimento é super atencioso e o ambiente tem uma energia incrível. Sobre os traços? A precisão é absurda e o resultado ficou perfeito. Uma artista completa que entrega ótimas técnicas e cuidado em cada detalhe.",
+  // },
+  // {
+  //   nome: "Victor José",
+  //   iniciais: "VJ",
+  //   texto: "Trabalho sensacional, local com fácil acesso, organização excelente, profissional super atenciosa e receptiva, higiene impecável, só pontos de qualidades a serem citados, voltarei mais vezes, gostei muito.",
+  // },
 ]
+const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
 
 export default function Depoimentos({ onAbrirModal }) {
   return (
@@ -81,12 +82,16 @@ export default function Depoimentos({ onAbrirModal }) {
           </svg>
         </a>
 
-        <button
-          onClick={onAbrirModal}
-          className="bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"
-        >
-          Fale comigo
-        </button>
+
+
+      <a
+        href={`https://wa.me/5511974585154?text=${mensagem}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"
+      >
+        Fale comigo
+      </a>
       </div>
 
     </section>
