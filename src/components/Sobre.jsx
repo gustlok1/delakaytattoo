@@ -1,6 +1,6 @@
 import kayt from '../assets/images/kayt.webp'
+import { whatsappLink } from '../config'
 
-const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
 
 export default function Sobre() {
   return (
@@ -57,7 +57,7 @@ export default function Sobre() {
           </div>
 
           <a
-            href={`https://wa.me/55XXXXXXXXXXX?text=${mensagem}`}
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-block self-start bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"

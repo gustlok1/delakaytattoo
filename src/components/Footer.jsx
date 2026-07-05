@@ -1,6 +1,7 @@
-export default function Footer() {
-  const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
+import { whatsappLink } from '../config'
 
+export default function Footer() {
+  
   return (
     <footer className="bg-zinc-900 border-t border-zinc-800 py-16 px-6">
       <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
@@ -8,13 +9,13 @@ export default function Footer() {
         {/* Nome e tagline */}
         <div className="text-center">
           <h2 className="text-4xl font-bold text-white mb-2">Kayt Tattoo</h2>
-          <p className="text-zinc-500 text-sm">Fine line e blackwork — São Paulo</p>
+          <p className="text-zinc-500 text-sm">Fine line e blackwork — São Paulo e Santa Catarina</p>
         </div>
 
         {/* Botão WhatsApp */}
         
         <a
-          href={`https://wa.me/5511974585154?text=${mensagem}`}
+          href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"

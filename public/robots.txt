@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.kayt-tattoo.com.br/sitemap.xml

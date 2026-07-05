@@ -1,4 +1,5 @@
 import imggoogle from '../assets/images/logo-google.webp'
+import { whatsappLink } from '../config'
 
 const depoimentos = [
   {
@@ -22,7 +23,6 @@ const depoimentos = [
   //   texto: "Trabalho sensacional, local com fácil acesso, organização excelente, profissional super atenciosa e receptiva, higiene impecável, só pontos de qualidades a serem citados, voltarei mais vezes, gostei muito.",
   // },
 ]
-const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
 
 export default function Depoimentos({ onAbrirModal }) {
   return (
@@ -90,7 +90,7 @@ export default function Depoimentos({ onAbrirModal }) {
 
 
       <a
-        href={`https://wa.me/5511974585154?text=${mensagem}`}
+        href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"

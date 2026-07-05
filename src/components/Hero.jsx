@@ -1,4 +1,5 @@
 import heroImg from '../assets/images/hero.jpg'
+import { whatsappLink } from '../config'
 
 export default function Hero({ onAbrirModal }) {
 
@@ -36,7 +37,7 @@ const mensagem = encodeURIComponent("Olá Kayt! Vim pelo site e gostaria de faze
         </p>
 
         <a
-            href={`https://wa.me/5511974585154?text=${mensagem}`}
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"

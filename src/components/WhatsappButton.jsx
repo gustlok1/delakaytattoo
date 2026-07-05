@@ -1,10 +1,11 @@
-export default function WhatsappButton() {
-  const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
+import { whatsappLink } from '../config'
 
+export default function WhatsappButton() {
+  
   return (
     <a
     
-      href={`https://wa.me/5511974585154?text=${mensagem}`}
+      href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"

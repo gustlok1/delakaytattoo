@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { whatsappLink } from '../config'
 
 import bw1 from '../assets/images/blackwork/tatto4.jpeg'
 import bw2 from '../assets/images/blackwork/tatto5.jpeg'
@@ -34,8 +35,6 @@ export default function Portfolio({ onAbrirModal }) {
     setAtiva(id)
     setFotoAtiva(0)
   }
-
-  const mensagem = encodeURIComponent("Olá Delakay! Vim pelo site e gostaria de fazer um orçamento.")
   
   return (
     <section className="py-6 px-6 bg-zinc-950">
@@ -115,7 +114,7 @@ export default function Portfolio({ onAbrirModal }) {
         <div className="text-center">
 
           <a
-            href={`https://wa.me/5511974585154?text=${mensagem}`}
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-8 py-4 rounded-full transition-all duration-300"
