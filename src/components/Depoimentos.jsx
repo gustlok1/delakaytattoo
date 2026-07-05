@@ -1,3 +1,5 @@
+import imggoogle from '../assets/images/logo-google.webp'
+
 const depoimentos = [
   {
     nome: "Bianca Ventura",
@@ -41,7 +43,7 @@ export default function Depoimentos({ onAbrirModal }) {
         {depoimentos.map((d) => (
           <div
             key={d.nome}
-            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-4"
+            className="bg-zinc-100 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-4"
           >
             {/* Estrelas */}
             <div className="flex gap-1">
@@ -53,16 +55,19 @@ export default function Depoimentos({ onAbrirModal }) {
             </div>
 
             {/* Texto */}
-            <p className="text-zinc-400 text-sm leading-relaxed flex-1">
+            <p className="text-zinc-700 text-sm leading-relaxed flex-1">
               "{d.texto}"
             </p>
 
             {/* Avatar + nome */}
-            <div className="flex items-center gap-3 pt-2 border-t border-zinc-800">
-              <div className="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center text-zinc-950 font-semibold text-xs">
-                {d.iniciais}
+            <div className="flex justify-between items-center gap-3 pt-2 border-t border-zinc-400">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center text-zinc-950 font-semibold text-xs">
+                  {d.iniciais}
+                </div>
+                <span className="text-zinc-700 text-sm font-medium">{d.nome}</span>
               </div>
-              <span className="text-white text-sm font-medium">{d.nome}</span>
+              <img src={imggoogle} alt="Google" className="w-8 h-8" loading="lazy" />
             </div>
           </div>
         ))}

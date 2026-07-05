@@ -22,11 +22,6 @@ const categorias = [
     label: 'Blackwork',
     fotos: [bw1, bw2, bw3],
   },
-  {
-    id: 'outros',
-    label: 'Outros estilos',
-    fotos: [ou1, ou2],
-  },
 ]
 
 export default function Portfolio({ onAbrirModal }) {

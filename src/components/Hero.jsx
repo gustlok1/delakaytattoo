@@ -23,11 +23,11 @@ const mensagem = encodeURIComponent("Olá Kayt! Vim pelo site e gostaria de faze
         </p>
 
         <h1 className="text-7xl md:text-9xl font-bold tracking-tight text-white">
-          Delakay
+          Kayt Mello
         </h1>
 
         <p className="text-zinc-400 text-lg md:text-xl max-w-md">
-          Fine line e blackwork em São Paulo
+          Fine line e blackwork <br/>em  <strong>São Paulo</strong> e <strong>Santa Catarina</strong>
         </p>
 
         <a

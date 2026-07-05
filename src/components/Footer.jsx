@@ -7,7 +7,7 @@ export default function Footer() {
 
         {/* Nome e tagline */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-white mb-2">Delakay</h2>
+          <h2 className="text-4xl font-bold text-white mb-2">Kayt Tattoo</h2>
           <p className="text-zinc-500 text-sm">Fine line e blackwork — São Paulo</p>
         </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
         {/* Divider + crédito */}
         <div className="w-full border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-zinc-600 text-xs">
-            © {new Date().getFullYear()} Delakay. Todos os direitos reservados.
+            © {new Date().getFullYear()} Kayt Tattoo. Todos os direitos reservados.
           </p>
           <p className="text-zinc-700 text-xs">
             São Paulo, SP
