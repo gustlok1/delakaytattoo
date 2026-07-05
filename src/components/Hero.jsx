@@ -8,12 +8,17 @@ const mensagem = encodeURIComponent("Olá Kayt! Vim pelo site e gostaria de faze
       
       {/* Bg */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImg}
-          alt=""
-          className="w-full h-full object-cover opacity-30"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 to-zinc-850" />
+
       </div>
 
       {/* Conteúdo */}

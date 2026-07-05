@@ -47,7 +47,7 @@ export default function Portfolio({ onAbrirModal }) {
             Portfólio
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            O trabalho fala por si
+            Especialidades
           </h2>
         </div>
 
